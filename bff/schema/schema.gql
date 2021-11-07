@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Data {
+  currencie: [CurrenciesModel!]
+  comment: String!
+}
+
+type CurrenciesModel {
+  id: String
+  rank: String
+  symbol: String
+  name: String
+  supply: String
+  maxSupply: String
+  marketCapUsd: String
+  volumeUsd24Hr: String
+  priceUsd: String
+  changePercent24Hr: String
+  vwap24Hr: String
+}
+
+type Query {
+  currencies: Data!
+}
