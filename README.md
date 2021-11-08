@@ -34,13 +34,24 @@ $ npm install
 
 ## Running the app
 
-```bash
-# development
-$ npm start
 
-# watch mode
-$ npm start:dev
+
+```bash
+# all in one
+$ npm init
+
+#only backend
+$ cd /server & npm start
+
+#only frontend
+$ cd /frontend & npm start
+
+# development
+$ cd /server & npm start
+
+# watch mode backend
+$ cd /server & npm start:dev
 
 # production mode
-$ npm run start:prod
+$ cd /server & npm run start:prod
 ```
