@@ -17,13 +17,7 @@ export class CurrenciesService {
     return this.currencies;
   }
 
-  queryCurrencies() {
-    const data = this.coincapServices.getAll();
-
-    if (data !== undefined) {
-      const result = data;
-      //this.dataToCurrencies(result);
-      return result;
-    }
+  async queryCurrencies(maxSize: number) {
+    return (await this.coincapServices.getAll()).data.slice(0, maxSize);
   }
 }

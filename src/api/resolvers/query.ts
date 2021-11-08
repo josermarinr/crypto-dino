@@ -12,7 +12,7 @@ export class QueryResolver {
   ) {}
   @Query(() => Data)
   async currencies() {
-    const response = (await this.coincapServices.getAll()).data.slice(0, 150);
+    const response = this.currenciesServices.queryCurrencies(50);
     const comment = 'funciona todo';
 
     return { currencie: response, comment: comment };
