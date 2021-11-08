@@ -2,9 +2,13 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Prices {
+  price: String
+}
+
 type Data {
   currencie: [CurrenciesModel!]
-  comment: String!
+  size: Float!
 }
 
 type CurrenciesModel {
@@ -23,4 +27,9 @@ type CurrenciesModel {
 
 type Query {
   currencies: Data!
+  currencie(crypto: String!): CurrenciesModel!
+}
+
+type Subscription {
+  currentPrice: Prices!
 }

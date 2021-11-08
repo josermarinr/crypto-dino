@@ -11,3 +11,6 @@ export interface Currencie {
   changePercent24Hr: string;
   vwap24Hr: string;
 }
+export interface Price {
+  [id: string]: string;
+}
