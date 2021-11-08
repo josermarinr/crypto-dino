@@ -1,30 +1,30 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
+<p style="background: white" align="center">
+  <a href="http://mar1n.com" target="blank" ><img src="./public/assets/logo_square.png"  width="300" alt="Crypto dino Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<p align="center">implementation of DDD (domain driven design) and CDD (component driven design) in a simple app for forecast of cryptocurrencies</p>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Motivation
 
-## Description
+we find many article to what is an architecture and also what is the clean code, the onion architecture or hexagonal architecture. Some people understand by reading but I understand when I making ( you understand what I try ti say 😁)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+in this repo, I will try to reproduce an DDD (backend side) and CDD( frontend side) with the following stack: Typescript everywhere.
+
+![all stack](./public/assets/stack.png)
+
+## Engineering
+
+Before I start coding I choose to spend more time thinking about the architecture, how I could implement it in a small project, the best way is by painting a diagram.
+
+you can see my brainstorm here [miro](https://miro.com/app/board/o9J_llP5RqU=/?invite_link_id=828246920801)
+
+In essence, this application is cut off somewhere, the application logic is inside the domain folder and the interaction with other external elements is another folder depending on the type of interaction, you can see everything in the following image.
+
+![all stack](./public/assets/ddd.png)
+
+all things behind if for the backend side, for the frontend side:
+
+![all stack](./public/assets/CDD.png)
 
 ## Installation
 
@@ -36,38 +36,11 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ npm start
 
 # watch mode
-$ npm run start:dev
+$ npm start:dev
 
 # production mode
 $ npm run start:prod
 ```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
