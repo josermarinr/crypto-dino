@@ -14,7 +14,7 @@ import { CoincapService } from './externalServices/coincap/coincap.service';
         GraphQLModule.forRoot({
             installSubscriptionHandlers: true,
             include: [ResolverModule],
-            autoSchemaFile: join(process.cwd(), '/bff/schema/schema.gql'),
+            autoSchemaFile: join(process.cwd(), './../bff/schema/schema.gql'),
         }),
     ],
     controllers: [AppController],

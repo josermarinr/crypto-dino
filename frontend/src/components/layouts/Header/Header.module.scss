@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.iconColor {
+    color: gray;
+}

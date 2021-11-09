@@ -1,0 +1,14 @@
+.homeSidebar {
+    position: sticky;
+    height: calc(100vh - 100px);
+    padding: 10px;
+    background-color: #cacaca;
+
+    .element {
+        margin-bottom: 10px;
+    }
+}
+
+.iconColor {
+    color: gray;
+}
