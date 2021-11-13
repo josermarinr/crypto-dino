@@ -1,5 +1,11 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { Currencie } from './currencie';
+import { Currencie, Price } from './currencie';
+
+@ObjectType()
+export class Prices {
+  @Field({ nullable: true })
+  price: string;
+}
 
 @ObjectType()
 export class Data {
@@ -7,7 +13,7 @@ export class Data {
   currencie: Currencie[];
 
   @Field()
-  comment: string;
+  size: number;
 }
 
 @ObjectType()

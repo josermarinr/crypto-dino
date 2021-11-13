@@ -1,4 +1,4 @@
-export interface currencie {
+export interface Currencie {
   id: string;
   rank: string;
   symbol: string;
@@ -12,6 +12,14 @@ export interface currencie {
   vwap24Hr: string;
 }
 
-export interface coincapData {
-  data: currencie[];
+export interface CoincapDataTable {
+  data: Currencie[];
+}
+
+export interface CoincapData {
+  data: Currencie;
+}
+
+export interface Price {
+  [id: string]: string;
 }
