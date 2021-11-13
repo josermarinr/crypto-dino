@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cde9fc76-432e-4fac-8fc5-3a7ce83c01df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layouts/WrapLayout/WrapLayout.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layouts/WrapLayout/WrapLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/layouts/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layouts/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/layouts/Header/Logo/Logo.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layouts/Header/Logo/Logo.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/RoundedLink/RoundedLink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/RoundedLink/RoundedLink.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/SearchBar/SearchBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/SearchBar/SearchBar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/widgets/SearchBar/SearchBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/widgets/SearchBar/SearchBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/page/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/page/Home/Home.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="20jjJhm4jCYpB0xJwC9bXzNSohq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Shell Script.frontend_run">
+    <configuration name="run_app_debug" type="CompoundRunConfigurationType">
+      <method v="2" />
+    </configuration>
+    <configuration name="frontend_run" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="npm run start" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/frontend" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/usr/local/bin/bash" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Compound.run_app_debug" />
+      <item itemvalue="Shell Script.frontend_run" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cde9fc76-432e-4fac-8fc5-3a7ce83c01df" name="Changes" comment="" />
+      <created>1636564824833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636564824833</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
