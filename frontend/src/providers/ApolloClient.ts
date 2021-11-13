@@ -7,5 +7,5 @@ export const AClient = new ApolloClient({
     connectToDevTools:
         process.env.NODE_ENV === "development" ||
         process.env.REACT_APP_FRONTEND_DEBUG === "True",
-    uri: process.env.BACKEND_GRAPHQL,
+    uri: "http://localhost:3000/graphql",
 });
