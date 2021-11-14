@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&family=Varta:wght@300;400;500;600;700&display=swap");
+@import "./variable.scss";
+body {
+    background: $hintgreen;
+    margin: 0;
+    font-family: "Varta", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Squada One", cursive;
+}
+
+h2,
+h3 {
+    font-size: 20px;
+    font-family: "Squada One", cursive;
+}
+
+p {
+    font-size: 12px;
+    font-family: "Varta", sans-serif;
+}

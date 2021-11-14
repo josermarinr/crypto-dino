@@ -1,0 +1,22 @@
+@import "./../../../variable.scss";
+
+.logo {
+    background: $hintgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+
+    &:hover {
+        background: $berylgreen;
+    }
+
+    a {
+        height: 25px;
+        img {
+            height: 25px;
+        }
+    }
+}

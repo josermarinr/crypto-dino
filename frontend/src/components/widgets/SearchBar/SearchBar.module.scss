@@ -1,0 +1,34 @@
+@import "./../../../variable.scss";
+
+.searchBar {
+    background: $berylgreen;
+    border-radius: 5px;
+    height: 40px;
+    width: 90%;
+    display: flex;
+    padding: 0 16px;
+    margin-right: 16px;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background: $mossgreen;
+    }
+
+    svg {
+        path {
+            fill: $midnight;
+        }
+    }
+
+    input {
+        margin-left: 16px;
+        border: none;
+        background-color: transparent;
+        outline: none;
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "./../../../variable.scss";
+
+.buttonRedirect {
+    background: $mossgreen;
+    color: $midnight;
+    padding: 10px;
+    width: 163px;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &:hover {
+        background: $swampgreen;
+        color: $bonjour;
+    }
+}

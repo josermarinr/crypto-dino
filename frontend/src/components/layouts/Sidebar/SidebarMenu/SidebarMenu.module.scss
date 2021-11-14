@@ -1,0 +1,22 @@
+@import "./../../../../variable.scss";
+
+$marginButtom: 50px;
+
+.sidebarMenu {
+    position: sticky;
+    height: calc(100vh - 30px);
+    padding: 20px 10px 10px 15px;
+    background-color: $swampgreen;
+
+    .logo {
+        margin-bottom: $marginButtom;
+    }
+
+    .element {
+        margin-bottom: $marginButtom;
+    }
+}
+
+.iconColor {
+    color: gray;
+}

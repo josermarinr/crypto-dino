@@ -1,28 +1,29 @@
 {
-  "name": "api",
-  "version": "1.0.0",
-  "description": "<p style=\"background: white\" align=\"center\">   <a href=\"http://mar1n.com\" target=\"blank\" ><img src=\"./public/assets/logo_square.png\"  width=\"300\" alt=\"Crypto dino Logo\" /></a> </p>",
-  "main": "index.js",
-  "scripts": {
-    "frontend:install": "cd frontend && npm install",
-    "frontend:start": "cd frontend && npm run start",
-    "frontend:build": "cd frontend && npm run build",
-    "frontend:test": "cd frontend && npm run test",
-    "server:install": "cd server && npm install",
-    "server:start": "cd server && npm run start:dev",
-    "server:build": "cd server && npm run build",
-    "server:test": "cd server && npm test",
-    "init": "(server:start) & npm run frontend:start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/josermarinr/crypto-dino.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/josermarinr/crypto-dino/issues"
-  },
-  "homepage": "https://github.com/josermarinr/crypto-dino#readme"
+    "name": "api",
+    "version": "1.0.0",
+    "description": "<p style=\"background: white\" align=\"center\">   <a href=\"http://mar1n.com\" target=\"blank\" ><img src=\"./public/assets/logo_square.png\"  width=\"300\" alt=\"Crypto dino Logo\" /></a> </p>",
+    "main": "index.js",
+    "scripts": {
+        "frontend:install": "cd frontend && npm install",
+        "frontend:start": "cd frontend && npm run start",
+        "frontend:build": "cd frontend && npm run build",
+        "frontend:test": "cd frontend && npm run test",
+        "server:install": "cd server && npm install",
+        "server:start": "cd server && npm run start:dev",
+        "server:build": "cd server && npm run build",
+        "server:test": "cd server && npm test",
+        "ci": "(npm run server:test) & npm run frontend:test",
+        "init": "(npm run server:start) & npm run frontend:start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/josermarinr/crypto-dino.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/josermarinr/crypto-dino/issues"
+    },
+    "homepage": "https://github.com/josermarinr/crypto-dino#readme"
 }

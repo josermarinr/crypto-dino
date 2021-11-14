@@ -1,5 +1,5 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { Currencie, Price } from './currencie';
+import { Currencie } from './currencie';
 
 @ObjectType()
 export class Prices {
