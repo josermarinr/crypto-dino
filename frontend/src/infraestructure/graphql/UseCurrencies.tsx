@@ -1,4 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
+import { Mock } from "../context/Mock";
 
 export const CURRENCIES = gql`
     query {
@@ -22,5 +23,22 @@ export const CURRENCIES = gql`
 
 export const UseCurrencies = () => {
     const { data, loading, error } = useQuery(CURRENCIES);
-    return { data, loading, error };
+    let value = data;
+    // if (loading) {
+    //     return <LoandingCard />;
+    // }
+
+    if (data === undefined || error) {
+        if (error) {
+            console.error(`you have a error, 😢 ${error} `);
+        }
+        if (data === undefined) {
+            console.warn(
+                `you're use stored data, your last updete is ${Mock.lastUpdate} `
+            );
+        }
+        value = Mock.data;
+    }
+
+    return { value, loading };
 };

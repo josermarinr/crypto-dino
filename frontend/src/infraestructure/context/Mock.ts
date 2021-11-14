@@ -1,10 +1,7 @@
 export const Mock = {
-    __typename: "Mock",
     data: {
-        __typename: "Data",
         currencie: [
             {
-                __typename: "CurrenciesModel",
                 id: "bitcoin",
                 rank: "1",
                 symbol: "BTC",
@@ -18,7 +15,6 @@ export const Mock = {
                 vwap24Hr: "64670.7428644885166534",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "ethereum",
                 rank: "2",
                 symbol: "ETH",
@@ -32,7 +28,6 @@ export const Mock = {
                 vwap24Hr: "4645.5127258087762042",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "binance-coin",
                 rank: "3",
                 symbol: "BNB",
@@ -46,7 +41,6 @@ export const Mock = {
                 vwap24Hr: "646.1555685930869696",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "tether",
                 rank: "4",
                 symbol: "USDT",
@@ -60,7 +54,6 @@ export const Mock = {
                 vwap24Hr: "1.0013553883513777",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "solana",
                 rank: "5",
                 symbol: "SOL",
@@ -74,7 +67,6 @@ export const Mock = {
                 vwap24Hr: "236.8374075095410511",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "cardano",
                 rank: "6",
                 symbol: "ADA",
@@ -88,7 +80,6 @@ export const Mock = {
                 vwap24Hr: "2.0514163222240746",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "xrp",
                 rank: "7",
                 symbol: "XRP",
@@ -102,7 +93,6 @@ export const Mock = {
                 vwap24Hr: "1.1909092224498225",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "polkadot",
                 rank: "8",
                 symbol: "DOT",
@@ -116,7 +106,6 @@ export const Mock = {
                 vwap24Hr: "46.6713841193469078",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "dogecoin",
                 rank: "9",
                 symbol: "DOGE",
@@ -130,7 +119,6 @@ export const Mock = {
                 vwap24Hr: "0.2630960717759960",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "usd-coin",
                 rank: "10",
                 symbol: "USDC",
@@ -144,7 +132,6 @@ export const Mock = {
                 vwap24Hr: "1.0015532844307048",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "shiba-inu",
                 rank: "11",
                 symbol: "SHIB",
@@ -158,7 +145,6 @@ export const Mock = {
                 vwap24Hr: "0.0000530126665716",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "terra-luna",
                 rank: "12",
                 symbol: "LUNA",
@@ -172,7 +158,6 @@ export const Mock = {
                 vwap24Hr: "51.6945542820779606",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "avalanche",
                 rank: "13",
                 symbol: "AVAX",
@@ -186,7 +171,6 @@ export const Mock = {
                 vwap24Hr: "96.1249517338770315",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "litecoin",
                 rank: "14",
                 symbol: "LTC",
@@ -200,7 +184,6 @@ export const Mock = {
                 vwap24Hr: "257.2184167474778560",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "chainlink",
                 rank: "15",
                 symbol: "LINK",
@@ -214,7 +197,6 @@ export const Mock = {
                 vwap24Hr: "33.9473672599541838",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "uniswap",
                 rank: "16",
                 symbol: "UNI",
@@ -228,7 +210,6 @@ export const Mock = {
                 vwap24Hr: "24.6953622074802597",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "wrapped-bitcoin",
                 rank: "17",
                 symbol: "WBTC",
@@ -242,7 +223,6 @@ export const Mock = {
                 vwap24Hr: "64606.0137979338039665",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "binance-usd",
                 rank: "18",
                 symbol: "BUSD",
@@ -256,7 +236,6 @@ export const Mock = {
                 vwap24Hr: "1.0018923091602861",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "bitcoin-cash",
                 rank: "19",
                 symbol: "BCH",
@@ -270,7 +249,6 @@ export const Mock = {
                 vwap24Hr: "668.7338307760250438",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "algorand",
                 rank: "20",
                 symbol: "ALGO",
@@ -284,7 +262,6 @@ export const Mock = {
                 vwap24Hr: "2.0607656774421876",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "polygon",
                 rank: "21",
                 symbol: "MATIC",
@@ -298,7 +275,6 @@ export const Mock = {
                 vwap24Hr: "1.7461017937247981",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "vechain",
                 rank: "22",
                 symbol: "VET",
@@ -312,7 +288,6 @@ export const Mock = {
                 vwap24Hr: "0.1604322137836426",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "crypto-com-coin",
                 rank: "23",
                 symbol: "CRO",
@@ -326,7 +301,6 @@ export const Mock = {
                 vwap24Hr: "0.4039529830239462",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "stellar",
                 rank: "24",
                 symbol: "XLM",
@@ -340,7 +314,6 @@ export const Mock = {
                 vwap24Hr: "0.3767904483560793",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "internet-computer",
                 rank: "25",
                 symbol: "ICP",
@@ -354,7 +327,6 @@ export const Mock = {
                 vwap24Hr: "47.9671092902543592",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "axie-infinity",
                 rank: "26",
                 symbol: "AXS",
@@ -368,7 +340,6 @@ export const Mock = {
                 vwap24Hr: "144.5237793165892215",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "tron",
                 rank: "27",
                 symbol: "TRX",
@@ -382,7 +353,6 @@ export const Mock = {
                 vwap24Hr: "0.1125097288831974",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "cosmos",
                 rank: "28",
                 symbol: "ATOM",
@@ -396,7 +366,6 @@ export const Mock = {
                 vwap24Hr: "32.6836112122735652",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "filecoin",
                 rank: "29",
                 symbol: "FIL",
@@ -410,7 +379,6 @@ export const Mock = {
                 vwap24Hr: "62.9053903666885655",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "ethereum-classic",
                 rank: "30",
                 symbol: "ETC",
@@ -424,7 +392,6 @@ export const Mock = {
                 vwap24Hr: "55.9769175886096789",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "theta",
                 rank: "31",
                 symbol: "THETA",
@@ -438,7 +405,6 @@ export const Mock = {
                 vwap24Hr: "7.1826007210580334",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "bitcoin-bep2",
                 rank: "32",
                 symbol: "BTCB",
@@ -452,7 +418,6 @@ export const Mock = {
                 vwap24Hr: "64448.3460785486048715",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "ftx-token",
                 rank: "33",
                 symbol: "FTT",
@@ -466,7 +431,6 @@ export const Mock = {
                 vwap24Hr: "55.9190500821143337",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "fantom",
                 rank: "34",
                 symbol: "FTM",
@@ -480,7 +444,6 @@ export const Mock = {
                 vwap24Hr: "2.6304148988237340",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "multi-collateral-dai",
                 rank: "35",
                 symbol: "DAI",
@@ -494,7 +457,6 @@ export const Mock = {
                 vwap24Hr: "1.0005338458213358",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "elrond-egld",
                 rank: "36",
                 symbol: "EGLD",
@@ -508,7 +470,6 @@ export const Mock = {
                 vwap24Hr: "323.5877480823220192",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "hedera-hashgraph",
                 rank: "37",
                 symbol: "HBAR",
@@ -522,7 +483,6 @@ export const Mock = {
                 vwap24Hr: "0.4392212733402270",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "near-protocol",
                 rank: "38",
                 symbol: "NEAR",
@@ -536,7 +496,6 @@ export const Mock = {
                 vwap24Hr: "11.2552282705030798",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "decentraland",
                 rank: "39",
                 symbol: "MANA",
@@ -550,7 +509,6 @@ export const Mock = {
                 vwap24Hr: "3.3264481275435159",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "chrono-tech",
                 rank: "40",
                 symbol: "TIME",
@@ -564,7 +522,6 @@ export const Mock = {
                 vwap24Hr: null,
             },
             {
-                __typename: "CurrenciesModel",
                 id: "helium",
                 rank: "41",
                 symbol: "HNT",
@@ -578,7 +535,6 @@ export const Mock = {
                 vwap24Hr: "52.0498334878921608",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "the-graph",
                 rank: "42",
                 symbol: "GRT",
@@ -592,7 +548,6 @@ export const Mock = {
                 vwap24Hr: "1.0950778027112684",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "tezos",
                 rank: "43",
                 symbol: "XTZ",
@@ -606,7 +561,6 @@ export const Mock = {
                 vwap24Hr: "5.9242730080765309",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "monero",
                 rank: "44",
                 symbol: "XMR",
@@ -620,7 +574,6 @@ export const Mock = {
                 vwap24Hr: "272.8898886403703346",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "eos",
                 rank: "45",
                 symbol: "EOS",
@@ -634,7 +587,6 @@ export const Mock = {
                 vwap24Hr: "4.9996307951871421",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "terrausd",
                 rank: "46",
                 symbol: "UST",
@@ -648,7 +600,6 @@ export const Mock = {
                 vwap24Hr: "1.0064489121208890",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "pancakeswap",
                 rank: "47",
                 symbol: "CAKE",
@@ -662,7 +613,6 @@ export const Mock = {
                 vwap24Hr: "18.4113322548079155",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "aave",
                 rank: "48",
                 symbol: "AAVE",
@@ -676,7 +626,6 @@ export const Mock = {
                 vwap24Hr: "311.5949082633147518",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "loopring",
                 rank: "49",
                 symbol: "LRC",
@@ -690,7 +639,6 @@ export const Mock = {
                 vwap24Hr: "2.9331445311580421",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "flow",
                 rank: "50",
                 symbol: "FLOW",
@@ -704,7 +652,6 @@ export const Mock = {
                 vwap24Hr: "13.1090617298000749",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "ecash",
                 rank: "51",
                 symbol: "XEC",
@@ -718,7 +665,6 @@ export const Mock = {
                 vwap24Hr: "0.0002049527573901",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "klaytn",
                 rank: "52",
                 symbol: "KLAY",
@@ -732,7 +678,6 @@ export const Mock = {
                 vwap24Hr: "1.5368571765157963",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "kusama",
                 rank: "53",
                 symbol: "KSM",
@@ -746,7 +691,6 @@ export const Mock = {
                 vwap24Hr: "427.2237844285471620",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "iota",
                 rank: "54",
                 symbol: "MIOTA",
@@ -760,7 +704,6 @@ export const Mock = {
                 vwap24Hr: "1.2970426819460122",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "cofound-it",
                 rank: "55",
                 symbol: "CFI",
@@ -774,7 +717,6 @@ export const Mock = {
                 vwap24Hr: null,
             },
             {
-                __typename: "CurrenciesModel",
                 id: "kadena",
                 rank: "56",
                 symbol: "KDA",
@@ -788,7 +730,6 @@ export const Mock = {
                 vwap24Hr: "23.2075536094982707",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "trustnote",
                 rank: "57",
                 symbol: "TTT",
@@ -802,7 +743,6 @@ export const Mock = {
                 vwap24Hr: "11.4186186984325154",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "neo",
                 rank: "58",
                 symbol: "NEO",
@@ -816,7 +756,6 @@ export const Mock = {
                 vwap24Hr: "48.8711323849046109",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "thorchain",
                 rank: "59",
                 symbol: "RUNE",
@@ -830,7 +769,6 @@ export const Mock = {
                 vwap24Hr: "13.1963592015589895",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "bitcoin-sv",
                 rank: "60",
                 symbol: "BSV",
@@ -844,7 +782,6 @@ export const Mock = {
                 vwap24Hr: "174.4749746493894902",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "chiliz",
                 rank: "61",
                 symbol: "CHZ",
@@ -858,7 +795,6 @@ export const Mock = {
                 vwap24Hr: "0.5440802894723868",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "quant",
                 rank: "62",
                 symbol: "QNT",
@@ -872,7 +808,6 @@ export const Mock = {
                 vwap24Hr: "260.2141756078089108",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "maker",
                 rank: "63",
                 symbol: "MKR",
@@ -886,7 +821,6 @@ export const Mock = {
                 vwap24Hr: "3113.3622011581102550",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "harmony",
                 rank: "64",
                 symbol: "ONE",
@@ -900,7 +834,6 @@ export const Mock = {
                 vwap24Hr: "0.2797993879705120",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "stacks",
                 rank: "65",
                 symbol: "STX",
@@ -914,7 +847,6 @@ export const Mock = {
                 vwap24Hr: "2.3175395225731270",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "unus-sed-leo",
                 rank: "66",
                 symbol: "LEO",
@@ -928,7 +860,6 @@ export const Mock = {
                 vwap24Hr: "2.8679452368999519",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "zcash",
                 rank: "67",
                 symbol: "ZEC",
@@ -942,7 +873,6 @@ export const Mock = {
                 vwap24Hr: "201.8865502282059389",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "the-sandbox",
                 rank: "68",
                 symbol: "SAND",
@@ -956,7 +886,6 @@ export const Mock = {
                 vwap24Hr: "2.9370729202550458",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "huobi-btc",
                 rank: "69",
                 symbol: "HBTC",
@@ -970,7 +899,6 @@ export const Mock = {
                 vwap24Hr: "64954.3501060751337232",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "enjin-coin",
                 rank: "70",
                 symbol: "ENJ",
@@ -984,7 +912,6 @@ export const Mock = {
                 vwap24Hr: "3.0943671101466990",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "waves",
                 rank: "71",
                 symbol: "WAVES",
@@ -998,7 +925,6 @@ export const Mock = {
                 vwap24Hr: "23.6093237615693409",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "bittorrent",
                 rank: "72",
                 symbol: "BTT",
@@ -1012,7 +938,6 @@ export const Mock = {
                 vwap24Hr: "0.0037709789968871",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "amp",
                 rank: "73",
                 symbol: "AMP",
@@ -1026,7 +951,6 @@ export const Mock = {
                 vwap24Hr: "0.0578711392346269",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "arweave",
                 rank: "74",
                 symbol: "AR",
@@ -1040,7 +964,6 @@ export const Mock = {
                 vwap24Hr: "71.9756089767182349",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "dash",
                 rank: "75",
                 symbol: "DASH",
@@ -1054,7 +977,6 @@ export const Mock = {
                 vwap24Hr: "226.9737614597591157",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "holo",
                 rank: "76",
                 symbol: "HOT",
@@ -1068,7 +990,6 @@ export const Mock = {
                 vwap24Hr: "0.0135617579364413",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "iotex",
                 rank: "77",
                 symbol: "IOTX",
@@ -1082,7 +1003,6 @@ export const Mock = {
                 vwap24Hr: "0.2333791126760336",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "safemoon",
                 rank: "78",
                 symbol: "SAFEMOON",
@@ -1096,7 +1016,6 @@ export const Mock = {
                 vwap24Hr: "0.0000037700718348",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "compound",
                 rank: "79",
                 symbol: "COMP",
@@ -1110,7 +1029,6 @@ export const Mock = {
                 vwap24Hr: "349.1775277222108328",
             },
             {
-                __typename: "CurrenciesModel",
                 id: "celo",
                 rank: "80",
                 symbol: "CELO",

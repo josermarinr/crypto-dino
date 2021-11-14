@@ -1,0 +1,14 @@
+.spiner {
+    img {
+        animation: rotate 2s ease-in-out infinite;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(358deg);
+    }
+}

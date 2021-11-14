@@ -1,0 +1,40 @@
+@import "./../../../variable.scss";
+
+.summaryDay {
+    min-height: 400px;
+    min-width: 400px;
+    padding: 20px 50px;
+}
+
+.table {
+    color: $gullgray;
+    width: 100%;
+    margin-bottom: 25px;
+    border-collapse: collapse;
+    thead {
+        border: 1px;
+        height: 30px;
+        border-bottom: 1px solid $Rum;
+        line-height: 16px;
+    }
+
+    tbody {
+        color: $Rum;
+
+        .row {
+            height: 30px;
+
+            .lastCell {
+                text-align: center;
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+
+.redirectButton {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

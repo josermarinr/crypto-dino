@@ -1,0 +1,14 @@
+@import "./../../variable.scss";
+
+.emptyState {
+    text-align: center;
+
+    &__id {
+        color: $mossgreen;
+    }
+
+    :nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+}
