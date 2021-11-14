@@ -14,13 +14,25 @@ export const SidebarMenu = () => {
         <div className={CSS.sidebarMenu}>
             <Logo className={CSS.logo} />
             <IconLink
-                url="/notification"
+                url="/all-currencies"
                 className={CSS.element}
                 icon={faClone}
             />
-            <IconLink url="/aa" className={CSS.element} icon={faChartBar} />
-            <IconLink url="/bb" className={CSS.element} icon={faList} />
-            <IconLink url="/cc" className={CSS.element} icon={faUser} />
+            <IconLink
+                url="/all-currencies"
+                className={CSS.element}
+                icon={faChartBar}
+            />
+            <IconLink
+                url="/all-currencies"
+                className={CSS.element}
+                icon={faList}
+            />
+            <IconLink
+                url="/all-currencies"
+                className={CSS.element}
+                icon={faUser}
+            />
         </div>
     );
 };

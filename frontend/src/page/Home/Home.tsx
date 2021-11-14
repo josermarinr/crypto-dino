@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 export const Home = () => {
     let navigate = useNavigate();
     const handlerSearch = async (ev: string) => {
-        navigate(ev);
+        navigate(`/currency/${ev}`);
     };
 
     return (
