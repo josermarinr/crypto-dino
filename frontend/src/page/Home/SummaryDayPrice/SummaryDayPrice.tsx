@@ -10,7 +10,10 @@ import CSS from "./SummaryDayPrice.module.scss";
 export const SummaryDayPrice = () => {
     const data = useContext(GeneralContext);
 
-    const summaryData = sortDataByPrice(data.currencie);
+    const summaryData =
+        data.currencie === undefined
+            ? data.currencie
+            : sortDataByPrice(data.currencie);
 
     return (
         <Card className={CSS.summaryDay}>

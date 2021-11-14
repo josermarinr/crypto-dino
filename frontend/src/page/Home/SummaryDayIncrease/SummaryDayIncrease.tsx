@@ -8,9 +8,14 @@ import { sortDataByPercent } from "../../../infraestructure/helper/helper";
 import CSS from "./SummaryDayIncrease.module.scss";
 
 export const SummaryDayIncrease = () => {
-    const data = useContext(GeneralContext);
+    const currency = useContext(GeneralContext);
 
-    const summaryData = sortDataByPercent(data.currencie);
+    const summaryData =
+        currency?.currencie !== undefined
+            ? sortDataByPercent(currency?.currencie)
+            : currency?.currencie;
+
+    console.log(currency);
 
     return (
         <Card className={CSS.summaryDay}>

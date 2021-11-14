@@ -1,5 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
-import { Spiner } from "../../components/widgets/Spiner/Spiner";
+import { GeneralData } from "../context/GeneralContext";
 import { Mock } from "../mocks/CurrenciesMock";
 
 export const CURRENCIES = gql`
@@ -24,10 +24,7 @@ export const CURRENCIES = gql`
 
 export const UseCurrencies = () => {
     const { data, loading, error } = useQuery(CURRENCIES);
-    let value = data;
-    if (loading) {
-        return <Spiner />;
-    }
+    let value: GeneralData = data?.currencies;
 
     if (data === undefined || error) {
         if (error) {
@@ -41,5 +38,5 @@ export const UseCurrencies = () => {
         value = Mock.data;
     }
 
-    return value;
+    return { value, loading };
 };

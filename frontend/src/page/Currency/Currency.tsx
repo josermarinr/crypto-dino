@@ -13,9 +13,10 @@ import { VolumeCard } from "./VolumeCard/VolumeCard";
 
 export const Currency = () => {
     const { id } = useParams() as any;
-    const value = UseCurrency(id);
-    console.log(value);
+    const { value, loading } = UseCurrency(id);
     let navigate = useNavigate();
+
+    if (loading) <Spiner />;
 
     if (value === undefined) {
         return (

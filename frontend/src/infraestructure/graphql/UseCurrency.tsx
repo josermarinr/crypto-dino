@@ -1,5 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
-import { Spiner } from "../../components/widgets/Spiner/Spiner";
+import { Currency } from "../interfaces/interfaces";
 import { currencyMock } from "../mocks/currencyMock";
 
 export const FIND_CURRENCY = gql`
@@ -26,11 +26,7 @@ export const UseCurrency = (crypto: string) => {
             crypto: crypto,
         },
     });
-    let value = data;
-
-    if (loading) {
-        return <Spiner />;
-    }
+    let value: Currency = data?.currencie;
 
     if (data === undefined || error) {
         if (error) {
@@ -44,5 +40,5 @@ export const UseCurrency = (crypto: string) => {
         value = currencyMock.currencie;
     }
 
-    return value;
+    return { value, loading };
 };

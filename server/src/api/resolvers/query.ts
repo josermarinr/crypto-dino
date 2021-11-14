@@ -10,7 +10,7 @@ export class QueryResolver {
     constructor(private readonly currenciesServices: CurrenciesService) {}
     @Query(() => Data)
     async currencies() {
-        const size = 80;
+        const size = 150;
         const response = this.currenciesServices.queryCurrencies(size);
 
         return { currencie: response, size: size };
