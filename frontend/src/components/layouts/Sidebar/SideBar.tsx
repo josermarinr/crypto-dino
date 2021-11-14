@@ -1,6 +1,11 @@
 import React from "react";
 import CSS from "./SideBar.module.scss";
+import { SidebarMenu } from "./SidebarMenu/SidebarMenu";
 
-export const SideBar: React.FunctionComponent = ({ children }) => {
-    return <div className={CSS.sidebar}>{children}</div>;
+export const SideBar = () => {
+    return (
+        <div className={CSS.sidebar}>
+            <SidebarMenu />
+        </div>
+    );
 };

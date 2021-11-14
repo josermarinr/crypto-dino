@@ -12,6 +12,7 @@
         "server:start": "cd server && npm run start:dev",
         "server:build": "cd server && npm run build",
         "server:test": "cd server && npm test",
+        "ci": "(npm run server:test) & npm run frontend:test",
         "init": "(npm run server:start) & npm run frontend:start"
     },
     "repository": {
