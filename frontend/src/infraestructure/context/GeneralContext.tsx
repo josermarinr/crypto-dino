@@ -1,21 +1,9 @@
 import * as React from "react";
 import { UseCurrencies } from "../graphql/UseCurrencies";
+import { Currency } from "../interfaces/interfaces";
 
-export interface CurrenciesModel {
-    id: String;
-    rank: String;
-    symbol: String;
-    name: String;
-    supply: String;
-    maxSupply: String | null;
-    marketCapUsd: String;
-    volumeUsd24Hr: String;
-    priceUsd: String;
-    changePercent24Hr: String;
-    vwap24Hr: String | null;
-}
 export interface GeneralData {
-    currencie?: CurrenciesModel[];
+    currencie?: Currency[];
     size?: number;
 }
 
@@ -25,7 +13,7 @@ export const GeneralContext = React.createContext<GeneralData>({
 });
 
 export const GeneralProvider: React.FunctionComponent = ({ children }) => {
-    const { value } = UseCurrencies();
+    const value = UseCurrencies();
 
     return (
         <GeneralContext.Provider value={value}>

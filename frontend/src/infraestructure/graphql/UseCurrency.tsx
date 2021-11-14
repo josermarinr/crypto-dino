@@ -1,4 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
+import { Spiner } from "../../components/widgets/Spiner/Spiner";
+import { currencyMock } from "../mocks/currencyMock";
 
 export const FIND_CURRENCY = gql`
     query currencie($crypto: String!) {
@@ -24,5 +26,23 @@ export const UseCurrency = (crypto: string) => {
             crypto: crypto,
         },
     });
-    return { data, loading, error };
+    let value = data;
+
+    if (loading) {
+        return <Spiner />;
+    }
+
+    if (data === undefined || error) {
+        if (error) {
+            console.error(`you have a error, 😢 ${error} `);
+        }
+        if (data === undefined) {
+            console.warn(
+                `you're use stored data, your last updete is ${currencyMock.lastUpdate} `
+            );
+        }
+        value = currencyMock.currencie;
+    }
+
+    return value;
 };

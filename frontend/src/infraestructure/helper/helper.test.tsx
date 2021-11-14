@@ -1,4 +1,4 @@
-import { Mock } from "../context/Mock";
+import { Mock } from "../mocks/CurrenciesMock";
 import { sortDataByPercent } from "./helper";
 
 describe("testing of function to manipulated data", () => {

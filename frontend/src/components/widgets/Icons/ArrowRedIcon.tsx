@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ArrowGreenIcon = (
+export const ArrowReedIcon = (
     <svg width="13" height="17" viewBox="0 0 13 17" fill="none">
         <g clip-path="url(#clip0_16_55)">
             <g clip-path="url(#clip1_16_55)">

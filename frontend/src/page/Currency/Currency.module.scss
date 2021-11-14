@@ -11,4 +11,18 @@
         display: flex;
         justify-content: center;
     }
+    .goBack {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.flexContainer {
+    display: flex;
+    margin-bottom: 16px;
+
+    & > :first-child {
+        margin-right: 42px;
+    }
 }

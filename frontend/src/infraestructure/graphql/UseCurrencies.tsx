@@ -1,5 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
-import { Mock } from "../context/Mock";
+import { Spiner } from "../../components/widgets/Spiner/Spiner";
+import { Mock } from "../mocks/CurrenciesMock";
 
 export const CURRENCIES = gql`
     query {
@@ -24,9 +25,9 @@ export const CURRENCIES = gql`
 export const UseCurrencies = () => {
     const { data, loading, error } = useQuery(CURRENCIES);
     let value = data;
-    // if (loading) {
-    //     return <LoandingCard />;
-    // }
+    if (loading) {
+        return <Spiner />;
+    }
 
     if (data === undefined || error) {
         if (error) {
@@ -40,5 +41,5 @@ export const UseCurrencies = () => {
         value = Mock.data;
     }
 
-    return { value, loading };
+    return value;
 };
