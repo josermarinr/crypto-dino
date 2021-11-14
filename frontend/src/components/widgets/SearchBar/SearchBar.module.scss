@@ -1,23 +1,23 @@
 @import "./../../../variable.scss";
 
 .searchBar {
-    background: $gray1;
-    border-radius: 16px;
-    height: 30px;
-    width: 300px;
+    background: $berylgreen;
+    border-radius: 5px;
+    height: 40px;
+    width: 90%;
     display: flex;
-    padding: 0 8px;
-    margin: 0 16px;
-    display: flex;
+    padding: 0 16px;
+    margin-right: 16px;
     align-items: center;
+    cursor: pointer;
 
     &:hover {
-        background: $gray2;
+        background: $mossgreen;
     }
 
     svg {
         path {
-            fill: gray;
+            fill: $midnight;
         }
     }
 

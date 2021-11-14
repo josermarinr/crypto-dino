@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
     "stories": [
         "../src/**/*.stories.mdx",
@@ -11,10 +12,19 @@ module.exports = {
         '@storybook/addon-actions',
         "@storybook/preset-create-react-app"
     ],
-    /* webpackFinal: async (config, {
-        configType
-    }) => {
+
+    webpackFinal: async (config) => {
         config.module.rules = []
+        config.module.rules.push({
+            test: /\.(tsx|ts)$/,
+            use: [{
+                loader: "ts-loader",
+                options: {
+                    configFile: path.resolve(__dirname, 'tsconfig.json')
+                }
+            }],
+            //include: path.resolve(__dirname, './../')
+        });
         config.module.rules.push({
             test: /\.(css|scss|sass)$/,
             use: [
@@ -30,7 +40,7 @@ module.exports = {
                     }
                 }
             ],
-            include: path.resolve(__dirname, '../')
+            //include: path.resolve(__dirname, './../')
         });
 
         config.module.rules.push({
@@ -52,7 +62,7 @@ module.exports = {
                 },
             },
         })
+
         return config;
     }
-*/
 }

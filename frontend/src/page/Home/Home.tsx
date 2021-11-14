@@ -1,17 +1,25 @@
 import React from "react";
-import { ContentSide } from "../../components/layouts/ContentSide/ContentSide";
-import { WrapLayout } from "../../components/layouts/WrapLayout/WrapLayout";
+import CSS from "./Home.module.scss";
+import { PageTitle } from "../../components/widgets/PageTitle/PageTitle";
+import { SearchBar } from "../../components/widgets/SearchBar/SearchBar";
 import { UseCurrency } from "../../infraestructure/graphql/UseCurrency";
-import { HomeContent } from "./HomeContent/HomeContent";
+import { UseCurrencies } from "../../infraestructure/graphql/UseCurrencies";
 
 export const Home = () => {
-    const { data } = UseCurrency("bitcoin");
+    const { data } = UseCurrencies();
     console.log(data);
     return (
-        <WrapLayout>
-            <ContentSide>
-                <HomeContent />
-            </ContentSide>
-        </WrapLayout>
+        <div className={CSS.home}>
+            <div className={CSS.flexContainer}>
+                <div className={CSS.firstBlock}>
+                    <PageTitle classname={CSS.title} />
+                    <SearchBar onSubmit={(ev) => console.log(ev)} />
+                </div>
+                <div className={CSS.secondBlock}>
+                    <PageTitle />
+                    <SearchBar onSubmit={(ev) => console.log(ev)} />
+                </div>
+            </div>
+        </div>
     );
 };

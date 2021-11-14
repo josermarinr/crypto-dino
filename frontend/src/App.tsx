@@ -3,10 +3,14 @@ import "./App.scss";
 import { ApolloProvider } from "@apollo/client";
 import { AClient } from "./providers/ApolloClient";
 import { Router } from "./Router/Router";
+import { GeneralProvider } from "./infraestructure/context/GeneralContext";
+
 function App() {
     return (
         <ApolloProvider client={AClient}>
-            <Router />
+            <GeneralProvider>
+                <Router />
+            </GeneralProvider>
         </ApolloProvider>
     );
 }

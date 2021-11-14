@@ -32,6 +32,8 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
+        "storybook": "start-storybook -p 5050 -s public",
+        "apollo-generate": "apollo codegen:generate --target typescript --no-addTypename --globalTypesFile=src/__generated__/globalTypes.ts",
         "test": "react-scripts test --runInBand --detectOpenHandles --forceExit",
         "eject": "react-scripts eject"
     },
@@ -40,14 +42,16 @@
             "react-app",
             "react-app/jest"
         ],
-        "overrides": [{
-            "files": [
-                "**/*.stories.*"
-            ],
-            "rules": {
-                "import/no-anonymous-default-export": "off"
+        "overrides": [
+            {
+                "files": [
+                    "**/*.stories.*"
+                ],
+                "rules": {
+                    "import/no-anonymous-default-export": "off"
+                }
             }
-        }]
+        ]
     },
     "browserslist": {
         "production": [
@@ -67,6 +71,9 @@
         "@storybook/addon-links": "^6.3.12",
         "@storybook/node-logger": "^6.3.12",
         "@storybook/preset-create-react-app": "^3.2.0",
-        "@storybook/react": "^6.3.12"
+        "@storybook/react": "^6.3.12",
+        "@types/graphql": "^14.5.0",
+        "apollo": "^2.33.9",
+        "hook-cross-tab": "^0.0.8"
     }
 }
