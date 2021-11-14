@@ -1,8 +1,8 @@
 import { Mock } from "../mocks/CurrenciesMock";
-import { sortDataByPercent } from "./helper";
+import { sortDataByPercent, sortDataByPrice } from "./helper";
 
 describe("testing of function to manipulated data", () => {
-    it.skip("should return the good order of data", () => {
+    it("should return the good order of data", () => {
         //given
         const dataMock = Mock;
         const data = sortDataByPercent(dataMock.data.currencie)?.slice(0, 3);
@@ -46,6 +46,55 @@ describe("testing of function to manipulated data", () => {
                 priceUsd: "95.5122335313410921",
                 changePercent24Hr: "8.5223515774207243",
                 vwap24Hr: "96.1249517338770315",
+            },
+        ];
+        //then
+        expect(data).toStrictEqual(expectedResult);
+    });
+    it("should return the good by price", () => {
+        //given
+        const dataMock = Mock;
+        const data = sortDataByPrice(dataMock.data.currencie)?.slice(0, 3);
+        //when
+        const expectedResult = [
+            {
+                id: "huobi-btc",
+                rank: "69",
+                symbol: "HBTC",
+                name: "Huobi BTC",
+                supply: "39884.0822047400000000",
+                maxSupply: "6910.0000000000000000",
+                marketCapUsd: "2585880545.6350677983149973",
+                volumeUsd24Hr: "113209.2655064809580997",
+                priceUsd: "64834.9016121461700496",
+                changePercent24Hr: "1.3585890850351656",
+                vwap24Hr: "64954.3501060751337232",
+            },
+            {
+                id: "wrapped-bitcoin",
+                rank: "17",
+                symbol: "WBTC",
+                name: "Wrapped Bitcoin",
+                supply: "239132.0815507100000000",
+                maxSupply: null,
+                marketCapUsd: "15446449182.0536042162670279",
+                volumeUsd24Hr: "80375769.4826317210731060",
+                priceUsd: "64593.7972098405071582",
+                changePercent24Hr: "1.3336625189015128",
+                vwap24Hr: "64606.0137979338039665",
+            },
+            {
+                id: "bitcoin",
+                rank: "1",
+                symbol: "BTC",
+                name: "Bitcoin",
+                supply: "18872887.0000000000000000",
+                maxSupply: "21000000.0000000000000000",
+                marketCapUsd: "1218440263681.3688589874323307",
+                volumeUsd24Hr: "15611621583.4937683766408516",
+                priceUsd: "64560.3538918750935661",
+                changePercent24Hr: "1.3687292697729605",
+                vwap24Hr: "64670.7428644885166534",
             },
         ];
         //then
