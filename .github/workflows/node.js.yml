@@ -5,11 +5,11 @@ name: Node.js CI
 
 on:
   push:
-    branches: 
+    branches:
     - master
     - dev
   pull_request:
-    branches: 
+    branches:
     - '*'
 
 jobs:
@@ -34,18 +34,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: ./server/package-lock.json
+        cache-dependency-path: ./server/package.json
     - run: npm run server:install
     - run: npm run server:build --if-present
     - run: npm run server:test
-    
+
 
     - name: 🦕 Use Node.js frontend
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: ./frontend/package-lock.json
+        cache-dependency-path: ./frontend/package.json
     - run: npm run frontend:install
     - run: npm run frontend:build --if-present
     - run: npm run frontend:test
