@@ -30,7 +30,6 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "storybook": "start-storybook -p 5050 -s public",
         "apollo-generate": "apollo codegen:generate --target typescript --no-addTypename --globalTypesFile=src/__generated__/globalTypes.ts",
         "test": "jest --runInBand --detectOpenHandles --forceExit",
         "eject": "react-scripts eject"
@@ -40,16 +39,14 @@
             "react-app",
             "react-app/jest"
         ],
-        "overrides": [
-            {
-                "files": [
-                    "**/*.stories.*"
-                ],
-                "rules": {
-                    "import/no-anonymous-default-export": "off"
-                }
+        "overrides": [{
+            "files": [
+                "**/*.stories.*"
+            ],
+            "rules": {
+                "import/no-anonymous-default-export": "off"
             }
-        ]
+        }]
     },
     "browserslist": {
         "production": [

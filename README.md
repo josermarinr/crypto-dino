@@ -26,26 +26,49 @@ all things behind if for the backend side, for the frontend side:
 
 ![all stack](./public/assets/CDD.png)
 
+**this repository has a list of commands in the root for both applications (frontend and backend)**
+
 ## Installation
 
 ```bash
-$ npm install
+# All in one
+$ npm run install
 ```
 
 ## Running the app
 
+```bash
+# All in one
+$ npm init
+# Only backend
+$ cd /server & npm start
+#or in root
+$ npm run server:start
+# Only frontend
+$ cd /frontend & npm start
+#or in root
+$ npm run frontend:start
+```
 
+## Test
 
 ```bash
-# all in one
-$ npm init
+# All in one
+$ npm run test
+# Only frontend
+$ cd /frontend & npm test
+#or in root
+$ npm run frontend:test
+# Only backend
+$ cd /server & npm test
+#or in root
+$ npm run server:test
 
-#only backend
-$ cd /server & npm start
+```
 
-#only frontend
-$ cd /frontend & npm start
+## Other command
 
+```bash
 # development
 $ cd /server & npm start
 
@@ -55,3 +78,20 @@ $ cd /server & npm start:dev
 # production mode
 $ cd /server & npm run start:prod
 ```
+
+## To improve
+
+In this adventure I have found some problems and characteristics that I cannot do for reasons of time.
+
+-   subscription graphql implementation
+-   storybook implementation (problems with jest)
+-   creation of stories
+-   DB implementation to save data on the server
+-   design improvement
+-   chart implementation for each curency
+-   implementation of behavior chart of the first 3 currency
+-   data comparison between 2 currency
+-   data comparison between 2 currency chart
+-   implementation of persistence test
+
+-   External library test implementation in case it doesn't work, what data do I send to the frontend?
